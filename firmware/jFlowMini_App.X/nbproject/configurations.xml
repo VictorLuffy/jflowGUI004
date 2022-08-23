@@ -80,6 +80,7 @@
             <itemPath>../src/Gui/MaintenanceScreen.h</itemPath>
             <itemPath>../src/Gui/AlarmScreen.h</itemPath>
             <itemPath>../src/Gui/PowerOffScreen.h</itemPath>
+            <itemPath>../src/Gui/SettingScreen_Maintenance.h</itemPath>
           </logicalFolder>
           <itemPath>../src/Gui/File.h</itemPath>
           <itemPath>../src/Gui/GuiDefine.h</itemPath>
@@ -862,6 +863,7 @@
             <itemPath>../src/Gui/SettingScreen_DataLog.c</itemPath>
             <itemPath>../src/Gui/SettingScreen_DataLog.h</itemPath>
             <itemPath>../src/Gui/PowerOffScreen.c</itemPath>
+            <itemPath>../src/Gui/SettingScreen_Maintenance.c</itemPath>
           </logicalFolder>
           <itemPath>../src/Gui/File.c</itemPath>
           <itemPath>../src/Gui/GuiDefine.c</itemPath>
@@ -1546,4394 +1548,978 @@
       <item path="../../../../../framework/gfx/driver/processor/nano2d/libnano2D.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/driver/processor/nano2d/libnano2D_types.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/inc/gfx_draw.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/inc/gfx_draw_arc.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/inc/gfx_draw_blit.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/inc/gfx_draw_circle.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/inc/gfx_draw_ellipse.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/inc/gfx_draw_line.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/inc/gfx_draw_pixel.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/inc/gfx_draw_rect.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/inc/gfx_draw_stretchblit.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/inc/gfx_math.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/src/gfx_color_blend.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/src/gfx_color_convert.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/src/gfx_color_lerp.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/src/gfx_color_value.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/src/gfx_draw_arc.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/src/gfx_draw_blit.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/src/gfx_draw_circle.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/src/gfx_draw_ellipse.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/src/gfx_draw_line.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/src/gfx_draw_pixel.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/src/gfx_draw_rect.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/src/gfx_draw_stretchblit.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/hal/src/gfx_math.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_array.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_common.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_context.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_context_rtos.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_draw.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_editwidget.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_event.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_event_rtos.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_global.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_input.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_input_rtos.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_layer.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_list.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_math.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_radiobutton_group.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_rectarray.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_scheme.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_screen.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_string.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_utils.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_arc.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_bar_graph.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_button.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_checkbox.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_circle.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_circular_gauge.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_circular_slider.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_drawsurface.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_gradient.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_groupbox.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_image.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_imageplus.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_imagesequence.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_keypad.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_label.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_line.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_line_graph.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_list.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_listwheel.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_pie_chart.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_progressbar.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_radial_menu.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_radiobutton.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_rectangle.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_scrollbar.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_skin_classic_common.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_slider.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_textfield.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_touchtest.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/inc/libaria_widget_window.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/libaria.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/libaria_rtos.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_array.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_context.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_context_paint.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_draw.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_editwidget.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_event.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_input.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_layer.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_list.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_radiobutton_group.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_rectarray.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_scheme.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_screen.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_string.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_utils.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_arc.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_arc_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_bar_graph.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_bar_graph_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_button.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_button_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_checkbox.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_checkbox_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_circle.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_circle_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_circular_gauge.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_circular_gauge_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_circular_slider.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_circular_slider_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_drawsurface.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_drawsurface_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_gradient.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_gradient_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_groupbox.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_groupbox_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_image.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_image_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_imageplus.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_imageplus_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_imagesequence.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_imagesequence_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_keypad.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_keypad_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_label.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_label_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_line.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_line_graph.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_line_graph_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_line_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_list.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_list_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_listwheel.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_listwheel_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_pie_chart.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_pie_chart_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_progressbar.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_progressbar_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_radial_menu.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_radial_menu_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_radiobutton.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_radiobutton_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_rectangle.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_rectangle_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_scrollbar.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_scrollbar_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_skin_classic_common.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_slider.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_slider_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_textfield.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_textfield_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_touchtest.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_touchtest_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_window.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/libaria/src/libaria_widget_window_skin_classic.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/gfx_utils.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/inc/gfxu_binary.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/inc/gfxu_font.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/inc/gfxu_global.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/inc/gfxu_image.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/inc/gfxu_image_jpg_common.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/inc/gfxu_image_utils.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/inc/gfxu_palette.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/inc/gfxu_string.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/inc/gfxu_string_utils.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_image.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_image_jpg_common.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_image_jpg_external.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_image_jpg_internal.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_image_png_external.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_image_png_internal.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_image_raw_external.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_image_raw_internal.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_image_rle_external.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_image_rle_internal.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_image_utils.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_palette.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_string.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_string_external.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_string_internal.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_string_query.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_string_utils.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../framework/gfx/utils/src/gfxu_stringbuffer_external.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../third_party/decoder/jidctint/src/jidctint.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../third_party/decoder/lodepng/lodepng.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../../../../../third_party/decoder/lodepng/lodepng.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/FreeRTOSConfig.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/app_mz.ld"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/bsp/bsp.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/bsp/bsp.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/driver/adc/drv_adc_static.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/driver/adc/src/drv_adc_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/driver/ic/drv_ic_static.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/driver/ic/src/drv_ic_mapping.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/driver/ic/src/drv_ic_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/driver/oc/drv_oc_static.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/driver/oc/src/drv_oc_mapping.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/driver/oc/src/drv_oc_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/driver/spi/dynamic/drv_spi_api.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/driver/spi/dynamic/drv_spi_master_ebm_tasks.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/driver/spi/dynamic/drv_spi_tasks.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/driver/sqi/drv_sqi_init.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/driver/sqi/src/drv_sqi_local.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/driver/controller/glcd/drv_gfx_glcd_static.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/driver/controller/glcd/src/drv_gfx_glcd_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/driver/processor/nano2d/libnano2D_hal.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/gfx_assets.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/gfx_assets.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/hal/gfx_config.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/hal/gfx_display_def.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/hal/gfx_driver_def.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/hal/gfx_processor_def.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/libaria/libaria_config.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/libaria/libaria_events.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/libaria/libaria_events.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/libaria/libaria_harmony.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/libaria/libaria_harmony.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/libaria/libaria_init.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/libaria/libaria_init.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/libaria/libaria_macros.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/gfx/libaria/libaria_macros.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/system/clk/src/sys_clk_pic32mz.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/system/devcon/src/sys_devcon.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/system/devcon/src/sys_devcon_cache.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/system/devcon/src/sys_devcon_cache_pic32mz.S"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/system/devcon/src/sys_devcon_local.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/system/devcon/src/sys_devcon_pic32mz.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/system/devcon/sys_devcon.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/system/fs/nvm_disk_images.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/system/fs/sram_disk_images.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/system/memory/ddr/src/sys_memory_ddr_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/system/memory/ddr/sys_memory_ddr_static.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/system/memory/src/sys_memory_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/system/ports/src/sys_ports_static.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/system/reset/src/sys_reset.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/framework/system/rtcc/sys_rtcc.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/rtos_hooks.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/system_config.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/system_definitions.h"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/system_exceptions.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/system_init.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/system_interrupt.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/system_interrupt_a.S"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <item path="../src/system_config/PIC32MZ2025DAR176/system_tasks.c"
             ex="true"
             overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
       </item>
       <C32>
         <property key="additional-warnings" value="false"/>
@@ -9934,7 +6520,7 @@
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-cross-reference-file" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
-        <property key="heap-size" value="105000"/>
+        <property key="heap-size" value="90000"/>
         <property key="input-libraries" value=""/>
         <property key="kseg-length" value=""/>
         <property key="kseg-origin" value=""/>
@@ -10347,6 +6933,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="1d000000-1d1fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/microchip/harmony/v2_06/apps/Project/jFlo_App_0.7.0_2308/firmware/jFlowMini_App.X/debug/PIC32MZ2025DAR176/jFlowMini_App_ptg"/>
         <property key="programmerToGoImageName" value="jFlowMini_App_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>

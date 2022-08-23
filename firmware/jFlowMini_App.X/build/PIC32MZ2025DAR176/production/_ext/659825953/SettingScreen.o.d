@@ -728,7 +728,8 @@ build/PIC32MZ2025DAR176/production/_ext/659825953/SettingScreen.o: \
  ../src/Gui/DeviceInformation.h ../src/Gui/SettingScreen_DataLog.h \
  ../src/Gui/SettingScreen_OxySourceSetting.h \
  ../src/Gui/SettingScreen_LanguageSetting.h \
- ../src/Gui/SettingScreen_OxygenConcentrationAlarmLimitSetting.h
+ ../src/Gui/SettingScreen_OxygenConcentrationAlarmLimitSetting.h \
+ ../src/Gui/SettingScreen_Maintenance.h
 
 ../src/Gui/SettingScreen.h:
 
@@ -2235,3 +2236,5 @@ build/PIC32MZ2025DAR176/production/_ext/659825953/SettingScreen.o: \
 ../src/Gui/SettingScreen_LanguageSetting.h:
 
 ../src/Gui/SettingScreen_OxygenConcentrationAlarmLimitSetting.h:
+
+../src/Gui/SettingScreen_Maintenance.h:

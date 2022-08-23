@@ -1,6 +1,6 @@
-build/PIC32MZ2025DAR176/production/_ext/1290520400/20210322_Medium_Synthetic_800Hz_260ms.o: \
- ../src/Device/20210322_Medium_Synthetic_800Hz_260ms.c \
- ../src/Device/../Gui/GuiDefine.h \
+build/PIC32MZ2025DAR176/production/_ext/659825953/SettingScreen_Maintenance.o: \
+ ../src/Gui/SettingScreen_Maintenance.c \
+ ../src/Gui/SettingScreen_Maintenance.h ../src/Gui/Setting.h \
  ../src/system_config/PIC32MZ2025DAR176/system_config.h \
  ../src/system_config/PIC32MZ2025DAR176/bsp/bsp.h \
  ../../../../../framework/peripheral/ports/plib_ports.h \
@@ -673,11 +673,47 @@ build/PIC32MZ2025DAR176/production/_ext/1290520400/20210322_Medium_Synthetic_800
  ../src/system_config/PIC32MZ2025DAR176/framework/gfx/libaria/libaria_init.h \
  ../src/system_config/PIC32MZ2025DAR176/framework/gfx/libaria/libaria_events.h \
  ../src/system_config/PIC32MZ2025DAR176/framework/gfx/gfx_assets.h \
- ../src/app.h ../../../../../framework/gfx/hal/inc/gfx_context.h \
- ../../../../../framework/gfx/hal/inc/gfx_hal.h ../src/Device/../Gui/mm.h \
- ../src/System/USBInterface.h
+ ../src/app.h ../src/Gui/StatusBar.h \
+ ../../../../../framework/gfx/hal/inc/gfx_context.h \
+ ../../../../../framework/gfx/hal/inc/gfx_hal.h \
+ ../src/Gui/DisplayControl.h ../src/Gui/LogInterface.h \
+ ../../../../../framework/system/rtcc/sys_rtcc_pic32m.h \
+ ../../../../../framework/peripheral/rtcc/plib_rtcc.h \
+ ../../../../../framework/peripheral/rtcc/processor/rtcc_processor.h \
+ ../../../../../framework/peripheral/rtcc/processor/rtcc_p32xxxx.h \
+ ../../../../../framework/peripheral/rtcc/processor/rtcc_p32mz2025dag176.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_EnableControl_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_Registers.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_WriteEnable_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_StopInIdle_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_OutputSelect_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_ClockSelect_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_ClockRunning_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_Calibration_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_Sync_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_HalfSecond_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_OutputControl_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_AlarmControl_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_AlarmChimeControl_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_AlarmPulseInitial_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_AlarmSync_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_AlarmMaskControl_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_AlarmRepeatControl_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_RTCTime_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_RTCDate_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_AlarmTime_Default.h \
+ ../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_AlarmDate_Default.h \
+ ../src/Device/RTC.h ../src/Alarm/AlarmInterface.h \
+ ../src/Device/ChamberUnit.h ../src/Gui/Setting.h \
+ ../src/HeaterControl/HeaterTask.h ../src/Gui/Setting.h ../src/Gui/File.h \
+ ../src/Gui/DeviceInformation.h ../src/Gui/GuiInterface.h \
+ ../src/MotorControl/MotorTask.h ../src/HeaterControl/HeaterTask.h \
+ ../src/Device/SpO2Data.h ../src/Device/RTC_BQ32002.h \
+ ../src/System/ApplicationDefinition.h ../src/Gui/GuiInterface.h
 
-../src/Device/../Gui/GuiDefine.h:
+../src/Gui/SettingScreen_Maintenance.h:
+
+../src/Gui/Setting.h:
 
 ../src/system_config/PIC32MZ2025DAR176/system_config.h:
 
@@ -2025,10 +2061,94 @@ build/PIC32MZ2025DAR176/production/_ext/1290520400/20210322_Medium_Synthetic_800
 
 ../src/app.h:
 
+../src/Gui/StatusBar.h:
+
 ../../../../../framework/gfx/hal/inc/gfx_context.h:
 
 ../../../../../framework/gfx/hal/inc/gfx_hal.h:
 
-../src/Device/../Gui/mm.h:
+../src/Gui/DisplayControl.h:
 
-../src/System/USBInterface.h:
+../src/Gui/LogInterface.h:
+
+../../../../../framework/system/rtcc/sys_rtcc_pic32m.h:
+
+../../../../../framework/peripheral/rtcc/plib_rtcc.h:
+
+../../../../../framework/peripheral/rtcc/processor/rtcc_processor.h:
+
+../../../../../framework/peripheral/rtcc/processor/rtcc_p32xxxx.h:
+
+../../../../../framework/peripheral/rtcc/processor/rtcc_p32mz2025dag176.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_EnableControl_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_Registers.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_WriteEnable_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_StopInIdle_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_OutputSelect_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_ClockSelect_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_ClockRunning_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_Calibration_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_Sync_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_HalfSecond_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_OutputControl_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_AlarmControl_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_AlarmChimeControl_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_AlarmPulseInitial_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_AlarmSync_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_AlarmMaskControl_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_AlarmRepeatControl_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_RTCTime_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_RTCDate_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_AlarmTime_Default.h:
+
+../../../../../framework/peripheral/rtcc/processor/../templates/rtcc_AlarmDate_Default.h:
+
+../src/Device/RTC.h:
+
+../src/Alarm/AlarmInterface.h:
+
+../src/Device/ChamberUnit.h:
+
+../src/Gui/Setting.h:
+
+../src/HeaterControl/HeaterTask.h:
+
+../src/Gui/Setting.h:
+
+../src/Gui/File.h:
+
+../src/Gui/DeviceInformation.h:
+
+../src/Gui/GuiInterface.h:
+
+../src/MotorControl/MotorTask.h:
+
+../src/HeaterControl/HeaterTask.h:
+
+../src/Device/SpO2Data.h:
+
+../src/Device/RTC_BQ32002.h:
+
+../src/System/ApplicationDefinition.h:
+
+../src/Gui/GuiInterface.h:

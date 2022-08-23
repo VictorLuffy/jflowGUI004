@@ -9,6 +9,7 @@
 #include "SettingScreen_OxySourceSetting.h"
 #include "SettingScreen_LanguageSetting.h"
 #include "SettingScreen_OxygenConcentrationAlarmLimitSetting.h"
+#include "SettingScreen_Maintenance.h"
 
 /** @brief variable to store setting screen status */
 static SettingScreen_Data_Struct s_settingScreenData;
@@ -314,6 +315,7 @@ void SettingScreen_DisplayScreenSetting()
     switch(SettingScreen_GetScreenSetting())
     {
         case eMenuScreenSetting:
+            SettingScreen_Maintenance_CommonSet();
             SettingScreen_DisplayScreenSetting_Common();
             laWidget_SetVisible((laWidget*)SC_MenuSettingPanel, LA_TRUE);
             laWidget_SetX((laWidget*)SC_TabButtonUnderBarPanel, UNDERBAR_MENUSETTING_POSITION_X);
@@ -321,6 +323,7 @@ void SettingScreen_DisplayScreenSetting()
             SettingScreen_DisplayMenuSetting();
             break;
         case eDataLogScreenSetting:
+            SettingScreen_Maintenance_CommonSet();
             SettingScreen_DisplayScreenSetting_Common();
             laWidget_SetVisible((laWidget*)SC_DataLogSettingPanel, LA_TRUE);
             laWidget_SetX((laWidget*)SC_TabButtonUnderBarPanel, UNDERBAR_DATALOG_POSITION_X);
@@ -332,8 +335,10 @@ void SettingScreen_DisplayScreenSetting()
             laWidget_SetVisible((laWidget*)SC_MaintenancePanel, LA_TRUE);
             laWidget_SetX((laWidget*)SC_TabButtonUnderBarPanel, UNDERBAR_MAINTENANCE_POSITION_X);
             laLabelWidget_SetText(SC_ScreenTitleLabel, laString_CreateFromID(string_text_SettingScreen_MAINTENANCE));
+            SettingScreen_Maintenance_Init();
             break;
         case eDeviceInformationScreenSetting:
+            SettingScreen_Maintenance_CommonSet();
             SettingScreen_DisplayScreenSetting_Common();
             laWidget_SetVisible((laWidget*)SC_DeviceInformationPanel, LA_TRUE);
             laWidget_SetX((laWidget*)SC_TabButtonUnderBarPanel, UNDERBAR_DEVICEINFORMATION_POSITION_X);
@@ -342,9 +347,11 @@ void SettingScreen_DisplayScreenSetting()
             break;        
         case eSaveConfimScreenSetting:
             // [W/A][tt] : move the panel out of the screen, laWidget_SetVisible not redraw correctly
+            SettingScreen_Maintenance_CommonSet();
             laWidget_SetX((laWidget*)SC_SaveConfirmPanel, 0);
             break;
         case eBackToMainScreenScreenSetting:
+            SettingScreen_Maintenance_CommonSet();
             DisplayControl_SetState(eMainScreenIsShowingDispState);
         default:
             break;
