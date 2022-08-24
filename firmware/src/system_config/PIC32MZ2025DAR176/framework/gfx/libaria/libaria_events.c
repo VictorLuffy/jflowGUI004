@@ -496,7 +496,7 @@ void SC_MenuSetting_SettingBrightness_NextButton_PressedEvent(laButtonWidget* bt
 // SC_MaintenanceKeypad - KeyClickEvent
 void SC_MaintenanceKeypad_KeyClickEvent(laKeyPadWidget* pad, laButtonWidget* btn, uint32_t row, uint32_t col)
 {
-    
+    if (row == 0 && col == 0) laLabelWidget_SetText(SC_MaintenanceCodeValLabel_1, laString_CreateFromID(string_text_SettingScreen_Maintenance_1));;
 }
 
 // SC_MaintenanceBtnBack - PressedEvent

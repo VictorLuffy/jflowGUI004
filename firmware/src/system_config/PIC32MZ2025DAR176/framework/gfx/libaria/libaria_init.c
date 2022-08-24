@@ -2633,46 +2633,52 @@ static void ScreenCreate_SettingScreen(laScreen* screen)
     laWidget_AddChild((laWidget*)SC_MaintenancePanel, (laWidget*)SC_MaintenanceEnterAccessCodeLabel);
 
     SC_MaintenanceRectanglePassword = laRectangleWidget_New();
-    laWidget_SetPosition((laWidget*)SC_MaintenanceRectanglePassword, 54, 30);
-    laWidget_SetSize((laWidget*)SC_MaintenanceRectanglePassword, 154, 32);
+    laWidget_SetPosition((laWidget*)SC_MaintenanceRectanglePassword, 55, 30);
+    laWidget_SetSize((laWidget*)SC_MaintenanceRectanglePassword, 152, 30);
     laWidget_SetScheme((laWidget*)SC_MaintenanceRectanglePassword, &JFLO_CyanIndicator_Scheme);
     laWidget_SetBackgroundType((laWidget*)SC_MaintenanceRectanglePassword, LA_WIDGET_BACKGROUND_NONE);
     laWidget_SetBorderType((laWidget*)SC_MaintenanceRectanglePassword, LA_WIDGET_BORDER_NONE);
+    laRectangleWidget_SetThickness(SC_MaintenanceRectanglePassword, 1);
     laWidget_AddChild((laWidget*)SC_MaintenancePanel, (laWidget*)SC_MaintenanceRectanglePassword);
 
     SC_MaintenanceCodeValLabel_1 = laLabelWidget_New();
-    laWidget_SetPosition((laWidget*)SC_MaintenanceCodeValLabel_1, 1, 1);
+    laWidget_SetPosition((laWidget*)SC_MaintenanceCodeValLabel_1, 0, 0);
     laWidget_SetSize((laWidget*)SC_MaintenanceCodeValLabel_1, 38, 30);
     laWidget_SetScheme((laWidget*)SC_MaintenanceCodeValLabel_1, &JFLO_Background_Scheme);
     laWidget_SetBackgroundType((laWidget*)SC_MaintenanceCodeValLabel_1, LA_WIDGET_BACKGROUND_NONE);
     laWidget_SetBorderType((laWidget*)SC_MaintenanceCodeValLabel_1, LA_WIDGET_BORDER_NONE);
-    laLabelWidget_SetHAlignment(SC_MaintenanceCodeValLabel_1, LA_HALIGN_LEFT);
+    laLabelWidget_SetText(SC_MaintenanceCodeValLabel_1, laString_CreateFromID(string_text_SettingScreen_Maintenance_StrikeThrough));
+    laLabelWidget_SetHAlignment(SC_MaintenanceCodeValLabel_1, LA_HALIGN_CENTER);
     laWidget_AddChild((laWidget*)SC_MaintenanceRectanglePassword, (laWidget*)SC_MaintenanceCodeValLabel_1);
 
     SC_MaintenanceCodeValLabel_2 = laLabelWidget_New();
-    laWidget_SetPosition((laWidget*)SC_MaintenanceCodeValLabel_2, 39, 1);
+    laWidget_SetPosition((laWidget*)SC_MaintenanceCodeValLabel_2, 38, 0);
     laWidget_SetSize((laWidget*)SC_MaintenanceCodeValLabel_2, 38, 30);
     laWidget_SetScheme((laWidget*)SC_MaintenanceCodeValLabel_2, &JFLO_Background_Scheme);
     laWidget_SetBackgroundType((laWidget*)SC_MaintenanceCodeValLabel_2, LA_WIDGET_BACKGROUND_NONE);
     laWidget_SetBorderType((laWidget*)SC_MaintenanceCodeValLabel_2, LA_WIDGET_BORDER_NONE);
-    laLabelWidget_SetHAlignment(SC_MaintenanceCodeValLabel_2, LA_HALIGN_LEFT);
+    laLabelWidget_SetText(SC_MaintenanceCodeValLabel_2, laString_CreateFromID(string_text_SettingScreen_Maintenance_StrikeThrough));
+    laLabelWidget_SetHAlignment(SC_MaintenanceCodeValLabel_2, LA_HALIGN_CENTER);
     laWidget_AddChild((laWidget*)SC_MaintenanceRectanglePassword, (laWidget*)SC_MaintenanceCodeValLabel_2);
 
     SC_MaintenanceCodeValLabel_3 = laLabelWidget_New();
-    laWidget_SetPosition((laWidget*)SC_MaintenanceCodeValLabel_3, 77, 1);
+    laWidget_SetPosition((laWidget*)SC_MaintenanceCodeValLabel_3, 76, 0);
     laWidget_SetSize((laWidget*)SC_MaintenanceCodeValLabel_3, 38, 30);
     laWidget_SetScheme((laWidget*)SC_MaintenanceCodeValLabel_3, &JFLO_Background_Scheme);
     laWidget_SetBackgroundType((laWidget*)SC_MaintenanceCodeValLabel_3, LA_WIDGET_BACKGROUND_NONE);
     laWidget_SetBorderType((laWidget*)SC_MaintenanceCodeValLabel_3, LA_WIDGET_BORDER_NONE);
-    laLabelWidget_SetHAlignment(SC_MaintenanceCodeValLabel_3, LA_HALIGN_LEFT);
+    laLabelWidget_SetText(SC_MaintenanceCodeValLabel_3, laString_CreateFromID(string_text_SettingScreen_Maintenance_StrikeThrough));
+    laLabelWidget_SetHAlignment(SC_MaintenanceCodeValLabel_3, LA_HALIGN_CENTER);
     laWidget_AddChild((laWidget*)SC_MaintenanceRectanglePassword, (laWidget*)SC_MaintenanceCodeValLabel_3);
 
     SC_MaintenanceCodeValLabel_4 = laLabelWidget_New();
-    laWidget_SetPosition((laWidget*)SC_MaintenanceCodeValLabel_4, 115, 1);
+    laWidget_SetPosition((laWidget*)SC_MaintenanceCodeValLabel_4, 114, 0);
     laWidget_SetSize((laWidget*)SC_MaintenanceCodeValLabel_4, 38, 30);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceCodeValLabel_4, &JFLO_Background_Scheme);
     laWidget_SetBackgroundType((laWidget*)SC_MaintenanceCodeValLabel_4, LA_WIDGET_BACKGROUND_NONE);
     laWidget_SetBorderType((laWidget*)SC_MaintenanceCodeValLabel_4, LA_WIDGET_BORDER_NONE);
-    laLabelWidget_SetHAlignment(SC_MaintenanceCodeValLabel_4, LA_HALIGN_LEFT);
+    laLabelWidget_SetText(SC_MaintenanceCodeValLabel_4, laString_CreateFromID(string_text_SettingScreen_Maintenance_StrikeThrough));
+    laLabelWidget_SetHAlignment(SC_MaintenanceCodeValLabel_4, LA_HALIGN_CENTER);
     laWidget_AddChild((laWidget*)SC_MaintenanceRectanglePassword, (laWidget*)SC_MaintenanceCodeValLabel_4);
 
     SC_MaintenanceKeypad = laKeyPadWidget_New(4, 3);
@@ -2737,7 +2743,7 @@ static void ScreenCreate_SettingScreen(laScreen* screen)
     laWidget_SetSize((laWidget*)SC_MaintenanceReplaceInternalBatteryLabel, 172, 25);
     laWidget_SetVisible((laWidget*)SC_MaintenanceReplaceInternalBatteryLabel, LA_FALSE);
     laWidget_SetScheme((laWidget*)SC_MaintenanceReplaceInternalBatteryLabel, &JFLO_Background_Scheme);
-    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceReplaceInternalBatteryLabel, LA_WIDGET_BACKGROUND_NONE);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceReplaceInternalBatteryLabel, LA_WIDGET_BACKGROUND_FILL);
     laWidget_SetBorderType((laWidget*)SC_MaintenanceReplaceInternalBatteryLabel, LA_WIDGET_BORDER_NONE);
     laLabelWidget_SetText(SC_MaintenanceReplaceInternalBatteryLabel, laString_CreateFromID(string_text_SettingScreen_Maintenance_REPLACEINTERNALBATTERY));
     laLabelWidget_SetHAlignment(SC_MaintenanceReplaceInternalBatteryLabel, LA_HALIGN_LEFT);
@@ -2748,7 +2754,7 @@ static void ScreenCreate_SettingScreen(laScreen* screen)
     laWidget_SetSize((laWidget*)SC_MaintenanceReplaceChamberLabel, 172, 25);
     laWidget_SetVisible((laWidget*)SC_MaintenanceReplaceChamberLabel, LA_FALSE);
     laWidget_SetScheme((laWidget*)SC_MaintenanceReplaceChamberLabel, &JFLO_Background_Scheme);
-    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceReplaceChamberLabel, LA_WIDGET_BACKGROUND_NONE);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceReplaceChamberLabel, LA_WIDGET_BACKGROUND_FILL);
     laWidget_SetBorderType((laWidget*)SC_MaintenanceReplaceChamberLabel, LA_WIDGET_BORDER_NONE);
     laLabelWidget_SetText(SC_MaintenanceReplaceChamberLabel, laString_CreateFromID(string_text_SettingScreen_Maintenance_REPLACECHAMBER));
     laLabelWidget_SetHAlignment(SC_MaintenanceReplaceChamberLabel, LA_HALIGN_LEFT);
@@ -2759,7 +2765,7 @@ static void ScreenCreate_SettingScreen(laScreen* screen)
     laWidget_SetSize((laWidget*)SC_MaintenanceExportLogDataLabel, 172, 25);
     laWidget_SetVisible((laWidget*)SC_MaintenanceExportLogDataLabel, LA_FALSE);
     laWidget_SetScheme((laWidget*)SC_MaintenanceExportLogDataLabel, &JFLO_Background_Scheme);
-    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceExportLogDataLabel, LA_WIDGET_BACKGROUND_NONE);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceExportLogDataLabel, LA_WIDGET_BACKGROUND_FILL);
     laWidget_SetBorderType((laWidget*)SC_MaintenanceExportLogDataLabel, LA_WIDGET_BORDER_NONE);
     laLabelWidget_SetText(SC_MaintenanceExportLogDataLabel, laString_CreateFromID(string_text_SettingScreen_Maintenance_EXPORTLOGDATA));
     laLabelWidget_SetHAlignment(SC_MaintenanceExportLogDataLabel, LA_HALIGN_LEFT);
@@ -2770,7 +2776,7 @@ static void ScreenCreate_SettingScreen(laScreen* screen)
     laWidget_SetSize((laWidget*)SC_MaintenanceClearLogDataLabel, 172, 25);
     laWidget_SetVisible((laWidget*)SC_MaintenanceClearLogDataLabel, LA_FALSE);
     laWidget_SetScheme((laWidget*)SC_MaintenanceClearLogDataLabel, &JFLO_Background_Scheme);
-    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceClearLogDataLabel, LA_WIDGET_BACKGROUND_NONE);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceClearLogDataLabel, LA_WIDGET_BACKGROUND_FILL);
     laWidget_SetBorderType((laWidget*)SC_MaintenanceClearLogDataLabel, LA_WIDGET_BORDER_NONE);
     laLabelWidget_SetText(SC_MaintenanceClearLogDataLabel, laString_CreateFromID(string_text_SettingScreen_Maintenance_CLEARLOGDATA));
     laLabelWidget_SetHAlignment(SC_MaintenanceClearLogDataLabel, LA_HALIGN_LEFT);
@@ -2781,7 +2787,7 @@ static void ScreenCreate_SettingScreen(laScreen* screen)
     laWidget_SetSize((laWidget*)SC_MaintenanceSoftwareUpdateLabel, 172, 25);
     laWidget_SetVisible((laWidget*)SC_MaintenanceSoftwareUpdateLabel, LA_FALSE);
     laWidget_SetScheme((laWidget*)SC_MaintenanceSoftwareUpdateLabel, &JFLO_Background_Scheme);
-    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceSoftwareUpdateLabel, LA_WIDGET_BACKGROUND_NONE);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceSoftwareUpdateLabel, LA_WIDGET_BACKGROUND_FILL);
     laWidget_SetBorderType((laWidget*)SC_MaintenanceSoftwareUpdateLabel, LA_WIDGET_BORDER_NONE);
     laLabelWidget_SetText(SC_MaintenanceSoftwareUpdateLabel, laString_CreateFromID(string_text_SettingScreen_Maintenance_SOFTWAREUPDATE));
     laLabelWidget_SetHAlignment(SC_MaintenanceSoftwareUpdateLabel, LA_HALIGN_LEFT);
@@ -2792,7 +2798,7 @@ static void ScreenCreate_SettingScreen(laScreen* screen)
     laWidget_SetSize((laWidget*)SC_MaintenanceResetToFactorySettingLabel, 172, 25);
     laWidget_SetVisible((laWidget*)SC_MaintenanceResetToFactorySettingLabel, LA_FALSE);
     laWidget_SetScheme((laWidget*)SC_MaintenanceResetToFactorySettingLabel, &JFLO_Background_Scheme);
-    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceResetToFactorySettingLabel, LA_WIDGET_BACKGROUND_NONE);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceResetToFactorySettingLabel, LA_WIDGET_BACKGROUND_FILL);
     laWidget_SetBorderType((laWidget*)SC_MaintenanceResetToFactorySettingLabel, LA_WIDGET_BORDER_NONE);
     laLabelWidget_SetText(SC_MaintenanceResetToFactorySettingLabel, laString_CreateFromID(string_text_SettingScreen_Maintenance_RESETTOFACTORYSETTING));
     laLabelWidget_SetHAlignment(SC_MaintenanceResetToFactorySettingLabel, LA_HALIGN_LEFT);
@@ -2803,7 +2809,7 @@ static void ScreenCreate_SettingScreen(laScreen* screen)
     laWidget_SetSize((laWidget*)SC_MaintenanceDeveloperModeLabel, 172, 25);
     laWidget_SetVisible((laWidget*)SC_MaintenanceDeveloperModeLabel, LA_FALSE);
     laWidget_SetScheme((laWidget*)SC_MaintenanceDeveloperModeLabel, &JFLO_Background_Scheme);
-    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceDeveloperModeLabel, LA_WIDGET_BACKGROUND_NONE);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceDeveloperModeLabel, LA_WIDGET_BACKGROUND_FILL);
     laWidget_SetBorderType((laWidget*)SC_MaintenanceDeveloperModeLabel, LA_WIDGET_BORDER_NONE);
     laLabelWidget_SetText(SC_MaintenanceDeveloperModeLabel, laString_CreateFromID(string_text_SettingScreen_Maintenance_DEVELOPERMODE));
     laLabelWidget_SetHAlignment(SC_MaintenanceDeveloperModeLabel, LA_HALIGN_LEFT);

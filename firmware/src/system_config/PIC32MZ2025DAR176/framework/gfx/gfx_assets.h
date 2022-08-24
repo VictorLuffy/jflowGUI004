@@ -1072,10 +1072,9 @@ extern GFXU_FontAsset AbelRegular_S26_Bold_Internal;
  * Name:         AbelRegular_S26_Nor_Internal
  * Height:       32
  * Style:        Plain
- * Glyph Count:  12
- * Range Count:  3
+ * Glyph Count:  11
+ * Range Count:  2
  * Glyph Ranges: 0x23
-			     0x2D
 			     0x30-0x39
  ***********************************/
 extern GFXU_FontAsset AbelRegular_S26_Nor_Internal;
