@@ -319,6 +319,44 @@ laImageWidget* SC_SaveConfirmBackgroundImage;
 laButtonWidget* SC_SaveConfirmYesButton;
 laButtonWidget* SC_SaveConfirmNoButton;
 laLabelWidget* SC_SaveConfirmTitleLabel;
+laWidget* SC_MaintenanceMonitorPanel;
+laImageWidget* SC_MaintenanceMonitorBackBtn;
+laLabelWidget* SC_MaintenanceEnviTempLb;
+laTextFieldWidget* SC_MaintenanceEnviTempTf;
+laLabelWidget* SC_MaintenanceEnviHumLb;
+laTextFieldWidget* SC_MaintenanceEnviHumTf;
+laLabelWidget* SC_MaintenanceCannulaTempLb;
+laTextFieldWidget* SC_MaintenanceCannulaTempTf;
+laLabelWidget* SC_MaintenanceCircuitTempLb;
+laTextFieldWidget* SC_MaintenanceCircuitTempTf;
+laLabelWidget* SC_MaintenanceChamberTempLb;
+laTextFieldWidget* SC_MaintenanceChamberTempTf;
+laLabelWidget* SC_MaintenanceEvtTempLb;
+laTextFieldWidget* SC_MaintenanceEvtTempTf;
+laLabelWidget* SC_MaintenanceIntBatTempLb;
+laTextFieldWidget* SC_MaintenanceIntBatTempTf;
+laLabelWidget* SC_MaintenanceExtBatTempLb;
+laTextFieldWidget* SC_MaintenanceExtBatTempTf;
+laLabelWidget* SC_MaintenanceAirFlowLb;
+laTextFieldWidget* SC_MaintenanceAirFlowTf;
+laLabelWidget* SC_MaintenanceO2FlowLb;
+laTextFieldWidget* SC_MaintenanceO2FlowTf;
+laLabelWidget* SC_MaintenanceFiO2Lb;
+laTextFieldWidget* SC_MaintenanceFiO2Tf;
+laLabelWidget* SC_MaintenanceBlowSpeedLb;
+laTextFieldWidget* SC_MaintenanceBlowSpeedTf;
+laLabelWidget* SC_MaintenancePositionXYLb;
+laTextFieldWidget* SC_MaintenancePositionXYTf;
+laLabelWidget* SC_MaintenanceCurrPowerLb;
+laTextFieldWidget* SC_MaintenanceCurrPowerTf;
+laLabelWidget* SC_MaintenanceTankWaterLb;
+laTextFieldWidget* SC_MaintenanceTankWaterTf;
+laLabelWidget* SC_MaintenancePiezoFreqLb;
+laTextFieldWidget* SC_MaintenancePiezoFreqTf;
+laLabelWidget* SC_MaintenanceIHLb;
+laButtonWidget* SC_MaintenanceIHBtn;
+laLabelWidget* SC_MaintenancePiezoLb;
+laButtonWidget* SC_MaintenancePiezoBtn;
 laLabelWidget* lbTitleAirflow;
 laLabelWidget* lbTitleO2flow;
 laLabelWidget* lbTitleTemp;
@@ -3526,6 +3564,349 @@ static void ScreenCreate_SettingScreen(laScreen* screen)
     laWidget_SetBorderType((laWidget*)SC_SaveConfirmTitleLabel, LA_WIDGET_BORDER_NONE);
     laLabelWidget_SetText(SC_SaveConfirmTitleLabel, laString_CreateFromID(string_text_SettingScreen_SaveConfirmTitle));
     laWidget_AddChild((laWidget*)SC_SaveConfirmPanel, (laWidget*)SC_SaveConfirmTitleLabel);
+
+    SC_MaintenanceMonitorPanel = laWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceMonitorPanel, 275, 0);
+    laWidget_SetSize((laWidget*)SC_MaintenanceMonitorPanel, 272, 480);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceMonitorPanel, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceMonitorPanel, LA_WIDGET_BACKGROUND_NONE);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceMonitorPanel, LA_WIDGET_BORDER_NONE);
+    laWidget_AddChild((laWidget*)layer0, SC_MaintenanceMonitorPanel);
+
+    SC_MaintenanceMonitorBackBtn = laImageWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceMonitorBackBtn, 3, 69);
+    laWidget_SetSize((laWidget*)SC_MaintenanceMonitorBackBtn, 41, 42);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceMonitorBackBtn, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceMonitorBackBtn, LA_WIDGET_BACKGROUND_NONE);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceMonitorBackBtn, LA_WIDGET_BORDER_NONE);
+    laImageWidget_SetImage(SC_MaintenanceMonitorBackBtn, &Icon_SettingScreen_DataLog_Prev);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceMonitorBackBtn);
+
+    SC_MaintenanceEnviTempLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceEnviTempLb, 12, 120);
+    laWidget_SetSize((laWidget*)SC_MaintenanceEnviTempLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceEnviTempLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceEnviTempLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceEnviTempLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenanceEnviTempLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_EnviTemp));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceEnviTempLb);
+
+    SC_MaintenanceEnviTempTf = laTextFieldWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceEnviTempTf, 12, 140);
+    laWidget_SetSize((laWidget*)SC_MaintenanceEnviTempTf, 76, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceEnviTempTf, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceEnviTempTf, LA_WIDGET_BORDER_NONE);
+    laTextFieldWidget_SetAlignment(SC_MaintenanceEnviTempTf, LA_HALIGN_CENTER);
+    laTextFieldWidget_SetCursorEnabled(SC_MaintenanceEnviTempTf, LA_TRUE);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceEnviTempTf);
+
+    SC_MaintenanceEnviHumLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceEnviHumLb, 12, 160);
+    laWidget_SetSize((laWidget*)SC_MaintenanceEnviHumLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceEnviHumLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceEnviHumLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceEnviHumLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenanceEnviHumLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_EnviHum));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceEnviHumLb);
+
+    SC_MaintenanceEnviHumTf = laTextFieldWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceEnviHumTf, 12, 180);
+    laWidget_SetSize((laWidget*)SC_MaintenanceEnviHumTf, 76, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceEnviHumTf, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceEnviHumTf, LA_WIDGET_BORDER_NONE);
+    laTextFieldWidget_SetAlignment(SC_MaintenanceEnviHumTf, LA_HALIGN_CENTER);
+    laTextFieldWidget_SetCursorEnabled(SC_MaintenanceEnviHumTf, LA_TRUE);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceEnviHumTf);
+
+    SC_MaintenanceCannulaTempLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceCannulaTempLb, 12, 200);
+    laWidget_SetSize((laWidget*)SC_MaintenanceCannulaTempLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceCannulaTempLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceCannulaTempLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceCannulaTempLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenanceCannulaTempLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_CannulaTemp));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceCannulaTempLb);
+
+    SC_MaintenanceCannulaTempTf = laTextFieldWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceCannulaTempTf, 12, 220);
+    laWidget_SetSize((laWidget*)SC_MaintenanceCannulaTempTf, 76, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceCannulaTempTf, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceCannulaTempTf, LA_WIDGET_BORDER_NONE);
+    laTextFieldWidget_SetAlignment(SC_MaintenanceCannulaTempTf, LA_HALIGN_CENTER);
+    laTextFieldWidget_SetCursorEnabled(SC_MaintenanceCannulaTempTf, LA_TRUE);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceCannulaTempTf);
+
+    SC_MaintenanceCircuitTempLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceCircuitTempLb, 14, 240);
+    laWidget_SetSize((laWidget*)SC_MaintenanceCircuitTempLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceCircuitTempLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceCircuitTempLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceCircuitTempLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenanceCircuitTempLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_CircuitTemp));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceCircuitTempLb);
+
+    SC_MaintenanceCircuitTempTf = laTextFieldWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceCircuitTempTf, 12, 260);
+    laWidget_SetSize((laWidget*)SC_MaintenanceCircuitTempTf, 76, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceCircuitTempTf, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceCircuitTempTf, LA_WIDGET_BORDER_NONE);
+    laTextFieldWidget_SetAlignment(SC_MaintenanceCircuitTempTf, LA_HALIGN_CENTER);
+    laTextFieldWidget_SetCursorEnabled(SC_MaintenanceCircuitTempTf, LA_TRUE);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceCircuitTempTf);
+
+    SC_MaintenanceChamberTempLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceChamberTempLb, 12, 280);
+    laWidget_SetSize((laWidget*)SC_MaintenanceChamberTempLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceChamberTempLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceChamberTempLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceChamberTempLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenanceChamberTempLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_ChamberTemp));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceChamberTempLb);
+
+    SC_MaintenanceChamberTempTf = laTextFieldWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceChamberTempTf, 12, 300);
+    laWidget_SetSize((laWidget*)SC_MaintenanceChamberTempTf, 76, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceChamberTempTf, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceChamberTempTf, LA_WIDGET_BORDER_NONE);
+    laTextFieldWidget_SetAlignment(SC_MaintenanceChamberTempTf, LA_HALIGN_CENTER);
+    laTextFieldWidget_SetCursorEnabled(SC_MaintenanceChamberTempTf, LA_TRUE);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceChamberTempTf);
+
+    SC_MaintenanceEvtTempLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceEvtTempLb, 12, 320);
+    laWidget_SetSize((laWidget*)SC_MaintenanceEvtTempLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceEvtTempLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceEvtTempLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceEvtTempLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenanceEvtTempLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_EvtTemp));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceEvtTempLb);
+
+    SC_MaintenanceEvtTempTf = laTextFieldWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceEvtTempTf, 12, 340);
+    laWidget_SetSize((laWidget*)SC_MaintenanceEvtTempTf, 76, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceEvtTempTf, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceEvtTempTf, LA_WIDGET_BORDER_NONE);
+    laTextFieldWidget_SetAlignment(SC_MaintenanceEvtTempTf, LA_HALIGN_CENTER);
+    laTextFieldWidget_SetCursorEnabled(SC_MaintenanceEvtTempTf, LA_TRUE);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceEvtTempTf);
+
+    SC_MaintenanceIntBatTempLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceIntBatTempLb, 98, 120);
+    laWidget_SetSize((laWidget*)SC_MaintenanceIntBatTempLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceIntBatTempLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceIntBatTempLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceIntBatTempLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenanceIntBatTempLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_IntBatTemp));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceIntBatTempLb);
+
+    SC_MaintenanceIntBatTempTf = laTextFieldWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceIntBatTempTf, 98, 140);
+    laWidget_SetSize((laWidget*)SC_MaintenanceIntBatTempTf, 76, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceIntBatTempTf, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceIntBatTempTf, LA_WIDGET_BORDER_NONE);
+    laTextFieldWidget_SetAlignment(SC_MaintenanceIntBatTempTf, LA_HALIGN_CENTER);
+    laTextFieldWidget_SetCursorEnabled(SC_MaintenanceIntBatTempTf, LA_TRUE);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceIntBatTempTf);
+
+    SC_MaintenanceExtBatTempLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceExtBatTempLb, 98, 160);
+    laWidget_SetSize((laWidget*)SC_MaintenanceExtBatTempLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceExtBatTempLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceExtBatTempLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceExtBatTempLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenanceExtBatTempLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_ExtBatTemp));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceExtBatTempLb);
+
+    SC_MaintenanceExtBatTempTf = laTextFieldWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceExtBatTempTf, 98, 180);
+    laWidget_SetSize((laWidget*)SC_MaintenanceExtBatTempTf, 76, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceExtBatTempTf, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceExtBatTempTf, LA_WIDGET_BORDER_NONE);
+    laTextFieldWidget_SetAlignment(SC_MaintenanceExtBatTempTf, LA_HALIGN_CENTER);
+    laTextFieldWidget_SetCursorEnabled(SC_MaintenanceExtBatTempTf, LA_TRUE);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceExtBatTempTf);
+
+    SC_MaintenanceAirFlowLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceAirFlowLb, 98, 200);
+    laWidget_SetSize((laWidget*)SC_MaintenanceAirFlowLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceAirFlowLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceAirFlowLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceAirFlowLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenanceAirFlowLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_AirFlow));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceAirFlowLb);
+
+    SC_MaintenanceAirFlowTf = laTextFieldWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceAirFlowTf, 98, 220);
+    laWidget_SetSize((laWidget*)SC_MaintenanceAirFlowTf, 76, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceAirFlowTf, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceAirFlowTf, LA_WIDGET_BORDER_NONE);
+    laTextFieldWidget_SetAlignment(SC_MaintenanceAirFlowTf, LA_HALIGN_CENTER);
+    laTextFieldWidget_SetCursorEnabled(SC_MaintenanceAirFlowTf, LA_TRUE);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceAirFlowTf);
+
+    SC_MaintenanceO2FlowLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceO2FlowLb, 98, 240);
+    laWidget_SetSize((laWidget*)SC_MaintenanceO2FlowLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceO2FlowLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceO2FlowLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceO2FlowLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenanceO2FlowLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_O2Flow));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceO2FlowLb);
+
+    SC_MaintenanceO2FlowTf = laTextFieldWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceO2FlowTf, 98, 260);
+    laWidget_SetSize((laWidget*)SC_MaintenanceO2FlowTf, 76, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceO2FlowTf, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceO2FlowTf, LA_WIDGET_BORDER_NONE);
+    laTextFieldWidget_SetAlignment(SC_MaintenanceO2FlowTf, LA_HALIGN_CENTER);
+    laTextFieldWidget_SetCursorEnabled(SC_MaintenanceO2FlowTf, LA_TRUE);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceO2FlowTf);
+
+    SC_MaintenanceFiO2Lb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceFiO2Lb, 98, 280);
+    laWidget_SetSize((laWidget*)SC_MaintenanceFiO2Lb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceFiO2Lb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceFiO2Lb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceFiO2Lb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenanceFiO2Lb, laString_CreateFromID(string_text_SettingScreen_Maintenance_Fio2));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceFiO2Lb);
+
+    SC_MaintenanceFiO2Tf = laTextFieldWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceFiO2Tf, 98, 300);
+    laWidget_SetSize((laWidget*)SC_MaintenanceFiO2Tf, 76, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceFiO2Tf, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceFiO2Tf, LA_WIDGET_BORDER_NONE);
+    laTextFieldWidget_SetAlignment(SC_MaintenanceFiO2Tf, LA_HALIGN_CENTER);
+    laTextFieldWidget_SetCursorEnabled(SC_MaintenanceFiO2Tf, LA_TRUE);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceFiO2Tf);
+
+    SC_MaintenanceBlowSpeedLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceBlowSpeedLb, 98, 320);
+    laWidget_SetSize((laWidget*)SC_MaintenanceBlowSpeedLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceBlowSpeedLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceBlowSpeedLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceBlowSpeedLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenanceBlowSpeedLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_BlowSpeed));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceBlowSpeedLb);
+
+    SC_MaintenanceBlowSpeedTf = laTextFieldWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceBlowSpeedTf, 98, 340);
+    laWidget_SetSize((laWidget*)SC_MaintenanceBlowSpeedTf, 76, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceBlowSpeedTf, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceBlowSpeedTf, LA_WIDGET_BORDER_NONE);
+    laTextFieldWidget_SetAlignment(SC_MaintenanceBlowSpeedTf, LA_HALIGN_CENTER);
+    laTextFieldWidget_SetCursorEnabled(SC_MaintenanceBlowSpeedTf, LA_TRUE);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceBlowSpeedTf);
+
+    SC_MaintenancePositionXYLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenancePositionXYLb, 184, 120);
+    laWidget_SetSize((laWidget*)SC_MaintenancePositionXYLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenancePositionXYLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenancePositionXYLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenancePositionXYLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenancePositionXYLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_PositionXY));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenancePositionXYLb);
+
+    SC_MaintenancePositionXYTf = laTextFieldWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenancePositionXYTf, 184, 140);
+    laWidget_SetSize((laWidget*)SC_MaintenancePositionXYTf, 76, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenancePositionXYTf, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenancePositionXYTf, LA_WIDGET_BORDER_NONE);
+    laTextFieldWidget_SetAlignment(SC_MaintenancePositionXYTf, LA_HALIGN_CENTER);
+    laTextFieldWidget_SetCursorEnabled(SC_MaintenancePositionXYTf, LA_TRUE);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenancePositionXYTf);
+
+    SC_MaintenanceCurrPowerLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceCurrPowerLb, 184, 160);
+    laWidget_SetSize((laWidget*)SC_MaintenanceCurrPowerLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceCurrPowerLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceCurrPowerLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceCurrPowerLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenanceCurrPowerLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_CurrPower));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceCurrPowerLb);
+
+    SC_MaintenanceCurrPowerTf = laTextFieldWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceCurrPowerTf, 184, 180);
+    laWidget_SetSize((laWidget*)SC_MaintenanceCurrPowerTf, 76, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceCurrPowerTf, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceCurrPowerTf, LA_WIDGET_BORDER_NONE);
+    laTextFieldWidget_SetAlignment(SC_MaintenanceCurrPowerTf, LA_HALIGN_CENTER);
+    laTextFieldWidget_SetCursorEnabled(SC_MaintenanceCurrPowerTf, LA_TRUE);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceCurrPowerTf);
+
+    SC_MaintenanceTankWaterLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceTankWaterLb, 184, 200);
+    laWidget_SetSize((laWidget*)SC_MaintenanceTankWaterLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceTankWaterLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceTankWaterLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceTankWaterLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenanceTankWaterLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_TankWaterLv));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceTankWaterLb);
+
+    SC_MaintenanceTankWaterTf = laTextFieldWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceTankWaterTf, 184, 220);
+    laWidget_SetSize((laWidget*)SC_MaintenanceTankWaterTf, 76, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceTankWaterTf, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceTankWaterTf, LA_WIDGET_BORDER_NONE);
+    laTextFieldWidget_SetAlignment(SC_MaintenanceTankWaterTf, LA_HALIGN_CENTER);
+    laTextFieldWidget_SetCursorEnabled(SC_MaintenanceTankWaterTf, LA_TRUE);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceTankWaterTf);
+
+    SC_MaintenancePiezoFreqLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenancePiezoFreqLb, 184, 240);
+    laWidget_SetSize((laWidget*)SC_MaintenancePiezoFreqLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenancePiezoFreqLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenancePiezoFreqLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenancePiezoFreqLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenancePiezoFreqLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_PiezoFreq));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenancePiezoFreqLb);
+
+    SC_MaintenancePiezoFreqTf = laTextFieldWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenancePiezoFreqTf, 184, 260);
+    laWidget_SetSize((laWidget*)SC_MaintenancePiezoFreqTf, 76, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenancePiezoFreqTf, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenancePiezoFreqTf, LA_WIDGET_BORDER_NONE);
+    laTextFieldWidget_SetAlignment(SC_MaintenancePiezoFreqTf, LA_HALIGN_CENTER);
+    laTextFieldWidget_SetCursorEnabled(SC_MaintenancePiezoFreqTf, LA_TRUE);
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenancePiezoFreqTf);
+
+    SC_MaintenanceIHLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceIHLb, 184, 280);
+    laWidget_SetSize((laWidget*)SC_MaintenanceIHLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceIHLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceIHLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceIHLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenanceIHLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_IHOnOff));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceIHLb);
+
+    SC_MaintenanceIHBtn = laButtonWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceIHBtn, 197, 300);
+    laWidget_SetSize((laWidget*)SC_MaintenanceIHBtn, 50, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceIHBtn, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceIHBtn, LA_WIDGET_BORDER_BEVEL);
+    laButtonWidget_SetText(SC_MaintenanceIHBtn, laString_CreateFromID(string_text_SettingScreen_Maintenance_ON));
+    laButtonWidget_SetPressedEventCallback(SC_MaintenanceIHBtn, &SC_MaintenanceIHBtn_PressedEvent);
+
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceIHBtn);
+
+    SC_MaintenancePiezoLb = laLabelWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenancePiezoLb, 184, 320);
+    laWidget_SetSize((laWidget*)SC_MaintenancePiezoLb, 76, 20);
+    laWidget_SetScheme((laWidget*)SC_MaintenancePiezoLb, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenancePiezoLb, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenancePiezoLb, LA_WIDGET_BORDER_NONE);
+    laLabelWidget_SetText(SC_MaintenancePiezoLb, laString_CreateFromID(string_text_SettingScreen_Maintenance_PiezoOnOff));
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenancePiezoLb);
+
+    SC_MaintenancePiezoBtn = laButtonWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenancePiezoBtn, 197, 340);
+    laWidget_SetSize((laWidget*)SC_MaintenancePiezoBtn, 50, 20);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenancePiezoBtn, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenancePiezoBtn, LA_WIDGET_BORDER_BEVEL);
+    laButtonWidget_SetText(SC_MaintenancePiezoBtn, laString_CreateFromID(string_text_SettingScreen_Maintenance_ON));
+    laButtonWidget_SetPressedEventCallback(SC_MaintenancePiezoBtn, &SC_MaintenancePiezoBtn_PressedEvent);
+
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenancePiezoBtn);
 
 }
 

@@ -707,6 +707,15 @@ void SC_SaveConfirmNoButton_PressedEvent(laButtonWidget* btn)
     // resume next screen
     SettingScreen_SetNextScreenSetting(SettingScreen_GetNextScreenSetting());
 }
+// SC_MaintenanceIHBtn - PressedEvent
+void SC_MaintenanceIHBtn_PressedEvent(laButtonWidget* btn)
+{
+}
+
+// SC_MaintenancePiezoBtn - PressedEvent
+void SC_MaintenancePiezoBtn_PressedEvent(laButtonWidget* btn)
+{
+}
 
 // MaintenanceScreen - ShowEvent
 void MaintenanceScreen_ShowEvent(laScreen* scr)
