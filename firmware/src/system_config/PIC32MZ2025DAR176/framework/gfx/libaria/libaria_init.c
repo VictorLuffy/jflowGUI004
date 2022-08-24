@@ -320,7 +320,6 @@ laButtonWidget* SC_SaveConfirmYesButton;
 laButtonWidget* SC_SaveConfirmNoButton;
 laLabelWidget* SC_SaveConfirmTitleLabel;
 laWidget* SC_MaintenanceMonitorPanel;
-laImageWidget* SC_MaintenanceMonitorBackBtn;
 laLabelWidget* SC_MaintenanceEnviTempLb;
 laTextFieldWidget* SC_MaintenanceEnviTempTf;
 laLabelWidget* SC_MaintenanceEnviHumLb;
@@ -357,6 +356,7 @@ laLabelWidget* SC_MaintenanceIHLb;
 laButtonWidget* SC_MaintenanceIHBtn;
 laLabelWidget* SC_MaintenancePiezoLb;
 laButtonWidget* SC_MaintenancePiezoBtn;
+laButtonWidget* SC_MaintenanceMonitorPrevBtn;
 laLabelWidget* lbTitleAirflow;
 laLabelWidget* lbTitleO2flow;
 laLabelWidget* lbTitleTemp;
@@ -3573,15 +3573,6 @@ static void ScreenCreate_SettingScreen(laScreen* screen)
     laWidget_SetBorderType((laWidget*)SC_MaintenanceMonitorPanel, LA_WIDGET_BORDER_NONE);
     laWidget_AddChild((laWidget*)layer0, SC_MaintenanceMonitorPanel);
 
-    SC_MaintenanceMonitorBackBtn = laImageWidget_New();
-    laWidget_SetPosition((laWidget*)SC_MaintenanceMonitorBackBtn, 3, 69);
-    laWidget_SetSize((laWidget*)SC_MaintenanceMonitorBackBtn, 41, 42);
-    laWidget_SetScheme((laWidget*)SC_MaintenanceMonitorBackBtn, &JFLO_Background_Scheme);
-    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceMonitorBackBtn, LA_WIDGET_BACKGROUND_NONE);
-    laWidget_SetBorderType((laWidget*)SC_MaintenanceMonitorBackBtn, LA_WIDGET_BORDER_NONE);
-    laImageWidget_SetImage(SC_MaintenanceMonitorBackBtn, &Icon_SettingScreen_DataLog_Prev);
-    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceMonitorBackBtn);
-
     SC_MaintenanceEnviTempLb = laLabelWidget_New();
     laWidget_SetPosition((laWidget*)SC_MaintenanceEnviTempLb, 12, 120);
     laWidget_SetSize((laWidget*)SC_MaintenanceEnviTempLb, 76, 20);
@@ -3907,6 +3898,18 @@ static void ScreenCreate_SettingScreen(laScreen* screen)
     laButtonWidget_SetPressedEventCallback(SC_MaintenancePiezoBtn, &SC_MaintenancePiezoBtn_PressedEvent);
 
     laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenancePiezoBtn);
+
+    SC_MaintenanceMonitorPrevBtn = laButtonWidget_New();
+    laWidget_SetPosition((laWidget*)SC_MaintenanceMonitorPrevBtn, 15, 80);
+    laWidget_SetSize((laWidget*)SC_MaintenanceMonitorPrevBtn, 30, 25);
+    laWidget_SetScheme((laWidget*)SC_MaintenanceMonitorPrevBtn, &JFLO_Background_Scheme);
+    laWidget_SetBackgroundType((laWidget*)SC_MaintenanceMonitorPrevBtn, LA_WIDGET_BACKGROUND_FILL);
+    laWidget_SetBorderType((laWidget*)SC_MaintenanceMonitorPrevBtn, LA_WIDGET_BORDER_NONE);
+    laButtonWidget_SetPressedImage(SC_MaintenanceMonitorPrevBtn, &Icon_SettingScreen_DataLog_Prev);
+    laButtonWidget_SetReleasedImage(SC_MaintenanceMonitorPrevBtn, &Icon_SettingScreen_DataLog_Prev);
+    laButtonWidget_SetPressedEventCallback(SC_MaintenanceMonitorPrevBtn, &SC_MaintenanceMonitorPrevBtn_PressedEvent);
+
+    laWidget_AddChild((laWidget*)SC_MaintenanceMonitorPanel, (laWidget*)SC_MaintenanceMonitorPrevBtn);
 
 }
 

@@ -1009,17 +1009,17 @@ extern GFXU_FontAsset MSGothic_S14_Internal;
  * Name:         AbelRegular_S14_Bold_Internal
  * Height:       19
  * Style:        Bold, Antialias
- * Glyph Count:  53
+ * Glyph Count:  47
  * Range Count:  9
  * Glyph Ranges: 0x20
-			     0x25
-			     0x2C
 			     0x32
 			     0x41-0x49
-			     0x4C-0x50
+			     0x4C-0x4F
 			     0x52-0x59
 			     0x5C
-			     0x61-0x7A
+			     0x61-0x6A
+			     0x6C-0x70
+			     0x72-0x79
  ***********************************/
 extern GFXU_FontAsset AbelRegular_S14_Bold_Internal;
 	
@@ -1034,16 +1034,6 @@ extern GFXU_FontAsset AbelRegular_S14_Bold_Internal;
 			     0x30-0x39
  ***********************************/
 extern GFXU_FontAsset BebasNeueBook_S60_Bold_Internal;
-	
-/*********************************
- * GFX Font Asset
- * Name:         Calibri_S26_Bold_Internal
- * Height:       33
- * Style:        Bold
- * Glyph Count:  0
- * Range Count:  0
- ***********************************/
-extern GFXU_FontAsset Calibri_S26_Bold_Internal;
 	
 /*********************************
  * GFX Font Asset
@@ -1066,18 +1056,6 @@ extern GFXU_FontAsset Calibri_S26_Bold_Internal;
 			     0x72-0x79
  ***********************************/
 extern GFXU_FontAsset AbelRegular_S26_Bold_Internal;
-	
-/*********************************
- * GFX Font Asset
- * Name:         AbelRegular_S26_Nor_Internal
- * Height:       32
- * Style:        Plain
- * Glyph Count:  11
- * Range Count:  2
- * Glyph Ranges: 0x23
-			     0x30-0x39
- ***********************************/
-extern GFXU_FontAsset AbelRegular_S26_Nor_Internal;
 	
 /*********************************
  * GFX Font Asset
@@ -1267,12 +1245,13 @@ extern GFXU_FontAsset AbelRegular_S18_Nor_SQI;
  * Name:         AbelRegular_S20_Bold_SQI
  * Height:       26
  * Style:        Bold, Antialias
- * Glyph Count:  70
- * Range Count:  6
+ * Glyph Count:  71
+ * Range Count:  7
  * Glyph Ranges: 0x20-0x21
 			     0x28-0x29
 			     0x2C
 			     0x2E-0x3A
+			     0x3F
 			     0x41-0x5A
 			     0x61-0x7A
  ***********************************/
@@ -1329,6 +1308,39 @@ extern GFXU_FontAsset AbelRegular_S36_Nor_SQI;
  * Range Count:  0
  ***********************************/
 extern GFXU_FontAsset AbelRegular_S26_Bold_SQI;
+	
+/*********************************
+ * GFX Font Asset
+ * Name:         AbelRegular_S24_Nor_SQI
+ * Height:       32
+ * Style:        Plain
+ * Glyph Count:  11
+ * Range Count:  2
+ * Glyph Ranges: 0x23
+			     0x30-0x39
+ ***********************************/
+extern GFXU_FontAsset AbelRegular_S24_Nor_SQI;
+	
+/*********************************
+ * GFX Font Asset
+ * Name:         AbelRegular_S14_Bold_SQI
+ * Height:       19
+ * Style:        Bold
+ * Glyph Count:  49
+ * Range Count:  11
+ * Glyph Ranges: 0x20
+			     0x25
+			     0x2C
+			     0x32
+			     0x41-0x49
+			     0x4C-0x50
+			     0x52-0x59
+			     0x61-0x66
+			     0x68-0x69
+			     0x6B-0x78
+			     0x7A
+ ***********************************/
+extern GFXU_FontAsset AbelRegular_S14_Bold_SQI;
 	
 /*****************************************************************************
  * MPLAB Harmony Graphics String Table

@@ -16,6 +16,8 @@ void SettingScreen_Maintenance_CommonSet()
 {
     laWidget_SetVisible((laWidget*)SC_MaintenanceKeypad, LA_FALSE);
     laWidget_SetVisible((laWidget*)SC_MaintenanceInvalidPasswordPanel, LA_FALSE);
+    laWidget_SetVisible((laWidget*)SC_MaintenanceMonitorPanel, LA_FALSE);
+    laWidget_SetVisible((laWidget*)SC_MaintenanceMonitorBackBtn, LA_FALSE);
 }
 
 /* @brief Init for maintenance screen

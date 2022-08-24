@@ -717,6 +717,11 @@ void SC_MaintenancePiezoBtn_PressedEvent(laButtonWidget* btn)
 {
 }
 
+// SC_MaintenanceMonitorPrevBtn - PressedEvent
+void SC_MaintenanceMonitorPrevBtn_PressedEvent(laButtonWidget* btn)
+{
+}
+
 // MaintenanceScreen - ShowEvent
 void MaintenanceScreen_ShowEvent(laScreen* scr)
 {

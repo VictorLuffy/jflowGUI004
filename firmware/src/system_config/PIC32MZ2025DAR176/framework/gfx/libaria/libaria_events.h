@@ -325,6 +325,15 @@ void SC_SaveConfirmYesButton_PressedEvent(laButtonWidget* btn);
 // Generated Event Handler - Origin: SC_SaveConfirmNoButton, Event: PressedEvent
 void SC_SaveConfirmNoButton_PressedEvent(laButtonWidget* btn);
 
+// Generated Event Handler - Origin: SC_MaintenanceIHBtn, Event: PressedEvent
+void SC_MaintenanceIHBtn_PressedEvent(laButtonWidget* btn);
+
+// Generated Event Handler - Origin: SC_MaintenancePiezoBtn, Event: PressedEvent
+void SC_MaintenancePiezoBtn_PressedEvent(laButtonWidget* btn);
+
+// Generated Event Handler - Origin: SC_MaintenanceMonitorPrevBtn, Event: PressedEvent
+void SC_MaintenanceMonitorPrevBtn_PressedEvent(laButtonWidget* btn);
+
 // Generated Event Handler - Origin: MaintenanceScreen, Event: ShowEvent
 void MaintenanceScreen_ShowEvent(laScreen* scr);
 
